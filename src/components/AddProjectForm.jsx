@@ -4,7 +4,6 @@ function AddProjectForm({ addProject }) {
   const [formData, setFormData] = useState({
     title: "",
     description: "",
-    image: "",
     category: "",
   });
 
@@ -25,7 +24,6 @@ function AddProjectForm({ addProject }) {
     setFormData({
       title: "",
       description: "",
-      image: "",
       category: "",
     });
   };
@@ -41,12 +39,7 @@ function AddProjectForm({ addProject }) {
         onChange={handleChange}
       />
 
-      <input
-        name="image"
-        placeholder="Image URL"
-        value={formData.image}
-        onChange={handleChange}
-      />
+    
 
       <input
         name="category"
